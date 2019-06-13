@@ -5,12 +5,12 @@ holberton \- become a full\-stack software engineer.
 .SH SYNOPSIS
 holberton [STUDENTNAME]
 .SH DESCRIPTION
-Holberton School is a project\-based alternative to college for the next generationnuseradd is high level shell program for adding users to LDAP server.  On Debian, administrators should usually use nuseradd.debian(8) instead.
+Holberton School is a project\-based alternative to college for the next generation of software engineers.
 .SH OPTIONS
-The nuseradd does not take any options. However, you can supply username.
+holberton does not take any options. However, you can supply studentname.
 .SH SEE ALSO
 peerlearning(2), projectbased(2), fullstack(2), Betty(1) 
 .SH BUGS
 No known bugs.
 .SH AUTHOR
-Vivek Gite (vivek@nixcraft.net.in)
+Julien Barbier, Sylvain Kalache, Sophie Barbier, Guillaume Slava, Kris Bredemeier, Julien Cyr, Alex Gautier and all the Holberton mentors
