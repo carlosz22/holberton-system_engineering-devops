@@ -1,0 +1,16 @@
+.\" Manpage for holberton.
+.TH man 2 "04 May 2015" "0.32" "holberton man page"
+.SH NAME
+holberton \- become a full\-stack software engineer. 
+.SH SYNOPSIS
+holberton [STUDENTNAME]
+.SH DESCRIPTION
+Holberton School is a project\-based alternative to college for the next generationnuseradd is high level shell program for adding users to LDAP server.  On Debian, administrators should usually use nuseradd.debian(8) instead.
+.SH OPTIONS
+The nuseradd does not take any options. However, you can supply username.
+.SH SEE ALSO
+useradd(8), passwd(5), nuseradd.debian(8) 
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Vivek Gite (vivek@nixcraft.net.in)
