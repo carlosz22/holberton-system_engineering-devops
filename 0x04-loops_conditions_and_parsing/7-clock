@@ -2,11 +2,11 @@
 # This script is displaying "Holberton School" 10 times
 
 hours=0
-min=0
+min=1
 
 while [ $hours -le 12 ]; do
  echo "Hour: $hours"
- min=0
+ min=1
 	while [ $min -le 59 ]; do
 	 echo $min
 	 min=$((min + 1))
