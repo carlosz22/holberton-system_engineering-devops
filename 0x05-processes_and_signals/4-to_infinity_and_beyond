@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #This script prints "To infinity and beyond" indefinetely
 
-while [ true ]; do
+while (true) ; do
 	echo "To infinity and beyond"
 	sleep 2
 done
