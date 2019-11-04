@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#This script is returning the list of id's with bash as process name
+
+pgrep -l bash

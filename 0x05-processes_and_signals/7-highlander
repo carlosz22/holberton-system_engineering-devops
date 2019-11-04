@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+#This script prints "To infinity and beyond" indefinetely
+
+sig_term() {
+	echo "I am invincible!!!"
+}
+
+trap sig_term TERM
+
+while [ true ]; do
+	echo "To infinity and beyond"
+	sleep 2
+done
+
+
