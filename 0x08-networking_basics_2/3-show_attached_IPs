@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script extracts all IPv4 address asign to the machine
+
+ifconfig | grep "inet addr" | cut -d ":" -f 2 | cut -d " " -f 1
