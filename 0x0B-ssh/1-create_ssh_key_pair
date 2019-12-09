@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Create an ssh key pair
+
+ssh-keygen -f "holberton" -b 4096 -t rsa -N "betty"
