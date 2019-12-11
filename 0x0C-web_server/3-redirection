@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Install Nginx and configure a redirection
+
+apt-get -y update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Holberton School" > /var/www/html/index.html
+sed -i "/server_name _;/a \\tlocation /redirect_me {\\n\\t return 301 https://google.com;\\n}" /etc/nginx/sites-available/default
+service nginx restart
+
