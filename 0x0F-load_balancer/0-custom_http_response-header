@@ -9,6 +9,6 @@ sed -i "/server_name _;/a location /redirect_me {\\n\\treturn 301 https://google
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/custom_404.html
 conf_404="error_page 404 /custom_404.html;\nlocation = /custom_404.html {\nroot /usr/share/nginx/html;\ninternal;\n}"
 sed -i "/server_name _;/a $conf_404" /etc/nginx/sites-available/default
-sed -i "/sendfile on;/a add_header X-Served-by \$hostname;" /etc/nginx/nginx.conf
+sed -i "/server_name _;/a add_header X-Served-By \$hostname;" /etc/nginx/sites-available/default
 service nginx restart
 
