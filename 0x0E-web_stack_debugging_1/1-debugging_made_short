@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Fix Nginx server on port 80
-
 sed -i -e "s/8080/80/g" /etc/nginx/sites-enabled/default
+service nginx reload
