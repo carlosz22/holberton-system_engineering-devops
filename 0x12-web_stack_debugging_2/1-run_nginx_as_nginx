@@ -2,4 +2,4 @@
 # Run Nginx as nginx user
 pkill -f apache2
 sudo sed -i 's/80/8080/g' /etc/nginx/sites-available/default
-sudo -u nginx service nginx start
+sudo service nginx start
