@@ -25,12 +25,11 @@ if __name__ == "__main__":
         for task in todo_data:
             task_data = [employee_id,
                          employee_name,
-                         str(task.get('completed')),
+                         (task.get('completed')),
                          task.get('title')]
             csv_list.append(task_data)
 
         with open(employee_id + '.csv', 'w') as file:
-            writer = csv.writer(file, delimiter=',', quotechar='"',
-                                quoting=csv.QUOTE_ALL)
+            writer = csv.writer(file, quoting=csv.QUOTE_ALL)
             for row in csv_list:
                 writer.writerow(row)
