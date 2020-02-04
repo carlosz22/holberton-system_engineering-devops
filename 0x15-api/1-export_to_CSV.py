@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Gather data from an API"""
+"""Gather data from an API and export the data to a CSV file"""
 
 import csv
 import requests
@@ -19,25 +19,18 @@ if __name__ == '__main__':
             todo_data = []
             employee_data = []
 
-        employee_name = employee_data[0].get('name')
-        total_tasks = len(todo_data)
-        tasks_completed = 0
-        tasks_completed_description = []
-        for task in todo_data:
-            if task.get('completed'):
-                tasks_completed += 1
-                tasks_completed_description.append(task.get('title'))
-
+        employee_username = employee_data[0].get('username')
         csv_list = []
         task_data = []
         for task in todo_data:
             task_data = [employee_id,
-                         employee_name,
-                         (task.get('completed')),
+                         employee_username,
+                         str(task.get('completed')),
                          task.get('title')]
             csv_list.append(task_data)
 
-        with open(employee_id + '.csv', 'w') as file:
-            writer = csv.writer(file, quoting=csv.QUOTE_ALL)
+        with open(employee_id + '.csv', 'w', newline='') as file:
+            writer = csv.writer(file, delimiter=',', quotechar='"',
+                                quoting=csv.QUOTE_ALL)
             for row in csv_list:
                 writer.writerow(row)
